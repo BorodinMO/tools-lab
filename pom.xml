@@ -37,33 +37,33 @@
             </plugin>
         </plugins>
     </build>
-        <profiles>
-            <profile>
-                <id>lombok</id>
-                <dependencies>
-                    <dependency>
-                        <groupId>org.projectlombok</groupId>
-                        <artifactId>lombok</artifactId>
-                        <version>1.18.10</version>
-                        <scope>provided</scope>
-                    </dependency>
-                </dependencies>
-                <activation>
-                    <activeByDefault>true</activeByDefault>
-                </activation>
-            </profile>
-            <profile>
-                <id>oldlombok</id>
-                <dependencies>
-                    <dependency>
-                        <groupId>org.projectlombok</groupId>
-                        <artifactId>lombok</artifactId>
-                        <version>1.14.4</version>
-                        <scope>provided</scope>
-                    </dependency>
-                </dependencies>
-            </profile>
-        </profiles>
+    <profiles>
+        <profile>
+            <id>lombok</id>
+            <dependencies>
+                <dependency>
+                    <groupId>org.projectlombok</groupId>
+                    <artifactId>lombok</artifactId>
+                    <version>1.18.10</version>
+                    <scope>provided</scope>
+                </dependency>
+            </dependencies>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+        </profile>
+        <profile>
+            <id>oldlombok</id>
+            <dependencies>
+                <dependency>
+                    <groupId>org.projectlombok</groupId>
+                    <artifactId>lombok</artifactId>
+                    <version>1.14.4</version>
+                    <scope>provided</scope>
+                </dependency>
+            </dependencies>
+        </profile>
+    </profiles>
     <modules>
         <module>test</module>
         <module>rest</module>
